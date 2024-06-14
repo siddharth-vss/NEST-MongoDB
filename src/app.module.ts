@@ -7,7 +7,7 @@ import { UserModule } from './user/user.module';
 
 
 @Module({
-  imports: [MongooseModule.forRoot('mongodb+srv://sparrow:2056King*@cluster0.rxzfnrt.mongodb.net/NEST?retryWrites=true&w=majority&appName=Cluster0'), UserModule],
+  imports: [MongooseModule.forRoot('{mongourl}'), UserModule],
   controllers: [AppController],
   providers: [AppService],
 })
